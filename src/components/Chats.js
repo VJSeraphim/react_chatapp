@@ -45,6 +45,10 @@ const Chats = () => {
             formdata.append('email', user.email)
             formdata.append('username', user.email)
             formdata.append('secret', user.uid)
+            axios.post('https://api.chatengine.io/users',
+            formData,
+            {headers : {"private-key" : }}
+            )
         })
     }, [user, history])
 
